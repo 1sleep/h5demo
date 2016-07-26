@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="aplus-terminal" content="1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/layer.js"></script>
+    <script src="js/calculate.js"></script>
+    <script>
+    	$(function(){
+    		var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    		var w = $(window).width();
+            var h = $(window).height();
+            $("body").css("minHeight", h + "px");
+            Part('.logo',640,81,0,20);
+            Part('.chevfood',640,374,0,0);
+            Part('.musicbox',640,479,0,0);
+            Part('.notwin',640,245,0,80);
+            Part('.attention',640,89,0,0);
+            Part('.name',120,57,0,5);
+            Part('.phone',200,57,0,5);
+            Part('.idcard',350,57,0,5);
+            Part('.address',420,57,0,5);
+            Part('.mouth',90,53,0,5);
+            Part('.day',90,53,0,5);
+            Part('.commit',191,75,220,30);
+            Part('.info',83,20,420,20);
+            Part('.food',200,135,360,150);
+            Part('.towin',240,62,200,100);
+            $('.towin').click(function(){
+    			window.location.href="prize.html"
+    		})
+    	})
+    </script>
+	<title></title>
+	<style>
+		input{
+			border-radius: .6rem;
+			border: 0;
+			text-indent: .5rem;
+			resize:none
+		}
+    	.info{
+			color:#fff;
+			font-weight: bolder;
+			font-size: .8rem;
+		}
+		.food{
+			margin-top: -20%;
+		}
+	</style>
+</head>
+<body>
+<img class="logo" src="img/indexlogo.png" alt="">
+<img class="notwin" src="img/nowin.png" alt="">
+<img class="towin" src="img/towin2.png" alt="">
+<img class="food" src="img/food.png" alt="">
+<a class="info" href="">活动说明</a>
+</body>
+</html>

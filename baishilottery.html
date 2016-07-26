@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="aplus-terminal" content="1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/layer.js"></script>
+    <script src="js/calculate.js"></script>
+     <script>
+    	$(function(){
+    		var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    		var w = $(window).width();
+            var h = $(window).height();
+            $("body").css("minHeight", h + "px");
+            Part('.logo',640,81,0,20);
+            Part('.theme',640,210,0,0);
+            Part('.ring',400,400,0,0);
+            Part('.clickwin',640,64,10,180);
+            Part('.go',140,140,0,190);
+            Part('.mess',640,95,0,20);
+            Part('.warn',640,17,0,10);
+            Part('.phone',330,57,0,0);
+            Part('.receipttip',314,53,34,0);
+            Part('.picture',181,169,368,35);
+            Part('.commit',191,75,365,80);
+            Part('.food',200,135,430,180);
+         
+    	})
+    </script>
+	
+	 <script src="js/jQueryRotate.2.2.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.ui.draggable.js"></script>
+    <script>
+        $(function () {
+         
+           
+            $(".go").click(function () {
+              
+                    $(".ring").rotate({
+                        duration: 3000,//转动时间间隔（转动速度）
+                        angle: 0,  //开始角度 
+                        animateTo: 3600+220, //转动角度，10圈+
+                        easing: $.easing.easeOutSine, //动画扩展 
+                        callback: function () { //回调函数 
+                            window.location.href = "tiremusic.html";
+                        }
+                    });
+                });
+ 
+        });
+    </script>
+	<title></title>
+	<style>
+		.lottery{
+			text-align: center;
+			margin-top: -5%;
+		}
+		.clickwin{
+			position: absolute;
+			left: 0;
+		}
+		.go{
+			position: absolute;
+			left: 40%;
+			opacity: 0;
+			z-index: 3;
+		}
+	</style>
+</head>
+<body>
+	<img class="logo" src="img/indexlogo.png" alt="">
+	<img class="theme" src="img/theme.png" alt="">
+	 
+	 
+	 <div class="lottery">
+		<img class="ring" src="img/ring.png" alt="">
+		<img class="clickwin" src="img/clickwin.png" alt="">
+		<input class="go" type="button" name="" value="">
+	</div>
+	
+	 
+	<img class="food" src="img/food.png" alt="">
+</body>
+</html>

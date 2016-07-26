@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="aplus-terminal" content="1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/layer.js"></script>
+    <script src="js/calculate.js"></script>
+    <script>
+    	$(function(){
+    		var w = $(window).width();
+            var h = $(window).height();
+            $("body").css("minHeight", h + "px");
+            Part('.logo',640,81,0,10);
+            Part('.wincar',640,340,0,20);
+         
+            Part('.baishi',640,499,0,30);
+            
+             
+    	})
+    </script>
+	<title></title>
+	<style>
+		body{
+			background: url('img/indexbg.jpg') no-repeat;
+			background-size: 100% 100%;
+		}
+		.btn1,.btn2{
+			position: absolute;
+			background: url('img/join.png') no-repeat;
+			background-size: 100% 100%;
+			border: 0;
+		}
+	</style>
+</head>
+<body>
+	<img class="logo" src="img/indexlogo.png" alt="">
+	 
+ 	<a href="message.html"><img src="img/wincar.png" alt="" border="0" class="wincar"></a>
+	<a href="upreceipt.html"><img src="img/baishi.png" alt="" border="0" class="baishi"></a>
+</body>
+</html>

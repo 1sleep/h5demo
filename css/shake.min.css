@@ -1,0 +1,696 @@
+.shake {
+display: inline-block;
+-webkit-transform-origin: center center;
+-ms-transform-origin: center center;
+transform-origin: center center;
+-webkit-animation-name: shake-base;
+-ms-animation-name: shake-base;
+animation-name: shake-base;
+-webkit-animation-duration: 600ms;
+-ms-animation-duration: 600ms;
+animation-duration: 600ms;
+-webkit-animation-iteration-count: infinite;
+-ms-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-in-out;
+-ms-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+-webkit-animation-delay: 0s;
+-ms-animation-delay: 0s;
+animation-delay: 0s;
+-webkit-animation-play-state: running;
+-ms-animation-play-state: running;
+animation-play-state: running;
+}
+.shake.freez.shake-rotate {
+    -webkit-animation-name: shake-rotate;
+    -ms-animation-name: shake-rotate;
+    animation-name: shake-rotate;
+    -webkit-animation-duration: 600ms;
+    -ms-animation-duration: 600ms;
+    animation-duration: 600ms;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
+}
+.shake.shake-rotate {
+-webkit-animation-name: shake-rotate;
+-ms-animation-name: shake-rotate;
+animation-name: shake-rotate;
+-webkit-animation-duration: 600ms;
+-ms-animation-duration: 600ms;
+animation-duration: 600ms;
+-webkit-animation-iteration-count: infinite;
+-ms-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-in-out;
+-ms-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+-webkit-animation-delay: 0s;
+-ms-animation-delay: 0s;
+animation-delay: 0s;
+-webkit-animation-play-state: running;
+-ms-animation-play-state: running;
+animation-play-state: running;
+}
+.shake.shake-constant.shake-rotate {
+    -webkit-animation-name: shake-rotate;
+    -ms-animation-name: shake-rotate;
+    animation-name: shake-rotate;
+    -webkit-animation-duration: 600ms;
+    -ms-animation-duration: 600ms;
+    animation-duration: 600ms;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
+}
+@-webkit-keyframes shake-rotate {
+0% {
+-webkit-transform: translate(0,0) rotate(20deg);
+}
+
+2% {
+-webkit-transform: translate(0,0) rotate(17deg);
+}
+
+4% {
+-webkit-transform: translate(0,0) rotate(14deg);
+}
+
+6% {
+-webkit-transform: translate(0,0) rotate(11deg);
+}
+
+8% {
+-webkit-transform: translate(0,0) rotate(8deg);
+}
+
+10% {
+-webkit-transform: translate(0,0) rotate(4deg);
+}
+
+12% {
+-webkit-transform: translate(0,0) rotate(0deg);
+}
+
+14% {
+-webkit-transform: translate(0,0) rotate(-4deg);
+}
+
+16% {
+-webkit-transform: translate(0,0) rotate(-8deg);
+}
+
+18% {
+-webkit-transform: translate(0,0) rotate(-12deg);
+}
+
+20% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+22% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+24% {
+-webkit-transform: translate(0,0) rotate(-20deg);
+}
+
+26% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+28% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+30% {
+-webkit-transform: translate(0,0) rotate(-11deg);
+}
+
+32% {
+-webkit-transform: translate(0,0) rotate(-7deg);
+}
+
+34% {
+-webkit-transform: translate(0,0) rotate(-4deg);
+}
+
+36% {
+-webkit-transform: translate(0,0) rotate(0deg);
+}
+
+38% {
+-webkit-transform: translate(0,0) rotate(3deg);
+}
+
+40% {
+-webkit-transform: translate(0,0) rotate(7deg);
+}
+
+42% {
+-webkit-transform: translate(0,0) rotate(10deg);
+}
+
+44% {
+-webkit-transform: translate(0,0) rotate(13deg);
+}
+
+46% {
+-webkit-transform: translate(0,0) rotate(16deg);
+}
+
+48% {
+-webkit-transform: translate(0,0) rotate(18deg);
+}
+
+50% {
+-webkit-transform: translate(0,0) rotate(20deg);
+}
+
+52% {
+-webkit-transform: translate(0,0) rotate(17deg);
+}
+
+54% {
+-webkit-transform: translate(0,0) rotate(14deg);
+}
+
+56% {
+-webkit-transform: translate(0,0) rotate(11deg);
+}
+
+58% {
+-webkit-transform: translate(0,0) rotate(7deg);
+}
+
+60% {
+-webkit-transform: translate(0,0) rotate(4deg);
+}
+
+62% {
+-webkit-transform: translate(0,0) rotate(1deg);
+}
+
+64% {
+-webkit-transform: translate(0,0) rotate(-3deg);
+}
+
+66% {
+-webkit-transform: translate(0,0) rotate(-7deg);
+}
+
+68% {
+-webkit-transform: translate(0,0) rotate(-11deg);
+}
+
+70% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+72% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+74% {
+-webkit-transform: translate(0,0) rotate(-20deg);
+}
+
+76% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+78% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+80% {
+-webkit-transform: translate(0,0) rotate(-11deg);
+}
+
+82% {
+-webkit-transform: translate(0,0) rotate(-8deg);
+}
+
+84% {
+-webkit-transform: translate(0,0) rotate(-5deg);
+}
+
+86% {
+-webkit-transform: translate(0,0) rotate(-1deg);
+}
+
+88% {
+-webkit-transform: translate(0,0) rotate(3deg);
+}
+
+90% {
+-webkit-transform: translate(0,0) rotate(7deg);
+}
+
+92% {
+-webkit-transform: translate(0,0) rotate(9deg);
+}
+
+94% {
+-webkit-transform: translate(0,0) rotate(12deg);
+}
+
+96% {
+-webkit-transform: translate(0,0) rotate(15deg);
+}
+
+98% {
+-webkit-transform: translate(0,0) rotate(16deg);
+}
+    100% {
+        -webkit-transform: translate(0,0) rotate(20deg);
+    }
+}
+@-ms-keyframes shake-rotate {
+0% {
+-webkit-transform: translate(0,0) rotate(20deg);
+}
+
+2% {
+-webkit-transform: translate(0,0) rotate(17deg);
+}
+
+4% {
+-webkit-transform: translate(0,0) rotate(14deg);
+}
+
+6% {
+-webkit-transform: translate(0,0) rotate(11deg);
+}
+
+8% {
+-webkit-transform: translate(0,0) rotate(8deg);
+}
+
+10% {
+-webkit-transform: translate(0,0) rotate(4deg);
+}
+
+12% {
+-webkit-transform: translate(0,0) rotate(0deg);
+}
+
+14% {
+-webkit-transform: translate(0,0) rotate(-4deg);
+}
+
+16% {
+-webkit-transform: translate(0,0) rotate(-8deg);
+}
+
+18% {
+-webkit-transform: translate(0,0) rotate(-12deg);
+}
+
+20% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+22% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+24% {
+-webkit-transform: translate(0,0) rotate(-20deg);
+}
+
+26% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+28% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+30% {
+-webkit-transform: translate(0,0) rotate(-11deg);
+}
+
+32% {
+-webkit-transform: translate(0,0) rotate(-7deg);
+}
+
+34% {
+-webkit-transform: translate(0,0) rotate(-4deg);
+}
+
+36% {
+-webkit-transform: translate(0,0) rotate(0deg);
+}
+
+38% {
+-webkit-transform: translate(0,0) rotate(3deg);
+}
+
+40% {
+-webkit-transform: translate(0,0) rotate(7deg);
+}
+
+42% {
+-webkit-transform: translate(0,0) rotate(10deg);
+}
+
+44% {
+-webkit-transform: translate(0,0) rotate(13deg);
+}
+
+46% {
+-webkit-transform: translate(0,0) rotate(16deg);
+}
+
+48% {
+-webkit-transform: translate(0,0) rotate(18deg);
+}
+
+50% {
+-webkit-transform: translate(0,0) rotate(20deg);
+}
+
+52% {
+-webkit-transform: translate(0,0) rotate(17deg);
+}
+
+54% {
+-webkit-transform: translate(0,0) rotate(14deg);
+}
+
+56% {
+-webkit-transform: translate(0,0) rotate(11deg);
+}
+
+58% {
+-webkit-transform: translate(0,0) rotate(7deg);
+}
+
+60% {
+-webkit-transform: translate(0,0) rotate(4deg);
+}
+
+62% {
+-webkit-transform: translate(0,0) rotate(1deg);
+}
+
+64% {
+-webkit-transform: translate(0,0) rotate(-3deg);
+}
+
+66% {
+-webkit-transform: translate(0,0) rotate(-7deg);
+}
+
+68% {
+-webkit-transform: translate(0,0) rotate(-11deg);
+}
+
+70% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+72% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+74% {
+-webkit-transform: translate(0,0) rotate(-20deg);
+}
+
+76% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+78% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+80% {
+-webkit-transform: translate(0,0) rotate(-11deg);
+}
+
+82% {
+-webkit-transform: translate(0,0) rotate(-8deg);
+}
+
+84% {
+-webkit-transform: translate(0,0) rotate(-5deg);
+}
+
+86% {
+-webkit-transform: translate(0,0) rotate(-1deg);
+}
+
+88% {
+-webkit-transform: translate(0,0) rotate(3deg);
+}
+
+90% {
+-webkit-transform: translate(0,0) rotate(7deg);
+}
+
+92% {
+-webkit-transform: translate(0,0) rotate(9deg);
+}
+
+94% {
+-webkit-transform: translate(0,0) rotate(12deg);
+}
+
+96% {
+-webkit-transform: translate(0,0) rotate(15deg);
+}
+
+98% {
+-webkit-transform: translate(0,0) rotate(16deg);
+}
+    100% {
+        -webkit-transform: translate(0,0) rotate(20deg);
+    }
+}
+@keyframes shake-rotate {
+0% {
+-webkit-transform: translate(0,0) rotate(20deg);
+}
+
+2% {
+-webkit-transform: translate(0,0) rotate(17deg);
+}
+
+4% {
+-webkit-transform: translate(0,0) rotate(14deg);
+}
+
+6% {
+-webkit-transform: translate(0,0) rotate(11deg);
+}
+
+8% {
+-webkit-transform: translate(0,0) rotate(8deg);
+}
+
+10% {
+-webkit-transform: translate(0,0) rotate(4deg);
+}
+
+12% {
+-webkit-transform: translate(0,0) rotate(0deg);
+}
+
+14% {
+-webkit-transform: translate(0,0) rotate(-4deg);
+}
+
+16% {
+-webkit-transform: translate(0,0) rotate(-8deg);
+}
+
+18% {
+-webkit-transform: translate(0,0) rotate(-12deg);
+}
+
+20% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+22% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+24% {
+-webkit-transform: translate(0,0) rotate(-20deg);
+}
+
+26% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+28% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+30% {
+-webkit-transform: translate(0,0) rotate(-11deg);
+}
+
+32% {
+-webkit-transform: translate(0,0) rotate(-7deg);
+}
+
+34% {
+-webkit-transform: translate(0,0) rotate(-4deg);
+}
+
+36% {
+-webkit-transform: translate(0,0) rotate(0deg);
+}
+
+38% {
+-webkit-transform: translate(0,0) rotate(3deg);
+}
+
+40% {
+-webkit-transform: translate(0,0) rotate(7deg);
+}
+
+42% {
+-webkit-transform: translate(0,0) rotate(10deg);
+}
+
+44% {
+-webkit-transform: translate(0,0) rotate(13deg);
+}
+
+46% {
+-webkit-transform: translate(0,0) rotate(16deg);
+}
+
+48% {
+-webkit-transform: translate(0,0) rotate(18deg);
+}
+
+50% {
+-webkit-transform: translate(0,0) rotate(20deg);
+}
+
+52% {
+-webkit-transform: translate(0,0) rotate(17deg);
+}
+
+54% {
+-webkit-transform: translate(0,0) rotate(14deg);
+}
+
+56% {
+-webkit-transform: translate(0,0) rotate(11deg);
+}
+
+58% {
+-webkit-transform: translate(0,0) rotate(7deg);
+}
+
+60% {
+-webkit-transform: translate(0,0) rotate(4deg);
+}
+
+62% {
+-webkit-transform: translate(0,0) rotate(1deg);
+}
+
+64% {
+-webkit-transform: translate(0,0) rotate(-3deg);
+}
+
+66% {
+-webkit-transform: translate(0,0) rotate(-7deg);
+}
+
+68% {
+-webkit-transform: translate(0,0) rotate(-11deg);
+}
+
+70% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+72% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+74% {
+-webkit-transform: translate(0,0) rotate(-20deg);
+}
+
+76% {
+-webkit-transform: translate(0,0) rotate(-17deg);
+}
+
+78% {
+-webkit-transform: translate(0,0) rotate(-14deg);
+}
+
+80% {
+-webkit-transform: translate(0,0) rotate(-11deg);
+}
+
+82% {
+-webkit-transform: translate(0,0) rotate(-8deg);
+}
+
+84% {
+-webkit-transform: translate(0,0) rotate(-5deg);
+}
+
+86% {
+-webkit-transform: translate(0,0) rotate(-1deg);
+}
+
+88% {
+-webkit-transform: translate(0,0) rotate(3deg);
+}
+
+90% {
+-webkit-transform: translate(0,0) rotate(7deg);
+}
+
+92% {
+-webkit-transform: translate(0,0) rotate(9deg);
+}
+
+94% {
+-webkit-transform: translate(0,0) rotate(12deg);
+}
+
+96% {
+-webkit-transform: translate(0,0) rotate(15deg);
+}
+
+98% {
+-webkit-transform: translate(0,0) rotate(16deg);
+}
+    100% {
+        -webkit-transform: translate(0,0) rotate(20deg);
+    }
+}

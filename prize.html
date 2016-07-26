@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="aplus-terminal" content="1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/layer.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/layer.js"></script>
+    <script src="js/calculate.js"></script>
+    <script>
+    	$(function(){
+    		var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    		var w = $(window).width();
+            var h = $(window).height();
+            $("body").css("minHeight", h + "px");
+            Part('.logo',640,81,0,20);
+            Part('.chevfood',640,374,0,0);
+            Part('.musicbox',640,479,0,0);
+            Part('.notwin',640,245,0,80);
+            Part('.attention',640,89,0,0);
+            Part('.name',120,47,0,5);
+            Part('.phone',210,47,0,5);
+            Part('.idcard',380,47,0,5);
+            Part('.address',380,47,0,5);
+            Part('.mouth',90,53,0,5);
+            Part('.day',90,53,0,5);
+            Part('.commit',191,75,220,30);
+            Part('.info',83,20,420,0);
+            Part('.food',200,135,14,0);
+            Part('.wewill',640,321,0,250);
+            Part('.towin',240,62,200,100);
+            Part('.done',640,321,0,250);
+            Part('.towin',291,75,170,100);
+            $('.commit').click(function(){
+            	if($('.name').val() == ""){
+            		layer.open({
+            			type: 1,
+            			time: 1,
+            			area :['240px','60px'],
+            			shadeClose: true,
+                        content: '\<\div style="padding: 10px;">请输入姓名\<\/div>'
+            		})
+            		return false;
+            	}
+            	if($('.idcard').val() == ""){
+            		layer.open({
+            			type: 1,
+            			time: 1,
+            			area :['240px','60px'],
+            			shadeClose: true,
+                        content: '\<\div style="padding: 10px;">请输入身份证号\<\/div>'
+            		})
+            		return false;
+            	}
+            	if($('.address').val() == ""){
+            		layer.open({
+            			type: 1,
+            			time: 1,
+            			area :['240px','60px'],
+            			shadeClose: true,
+                        content: '\<\div style="padding: 10px;">请输入地址\<\/div>'
+            		})
+            		return false;
+            	}
+    			if(!myreg.test($(".phone").val())) 
+				{ 
+				    layer.open({
+                        type: 1,
+                        area: ['240px','60px'],
+                        time: 1,
+                        shadeClose: true,
+                        content: '\<\div style="padding: 10px;">请输入正确手机号\<\/div>'
+                    }) 
+				    return false;
+				} 
+				//$('.again').click(function(){
+    			$('.commitdone').css('display','block');
+    		//})
+				//$('.commitsuccess').css('display','block');
+    		})
+    		$('.towin').click(function(){
+    			window.location.href="chev.html";
+    		})
+    	})
+    </script>
+	<title></title>
+	<style>
+		body{
+			background: url('img/winningbg.jpg') no-repeat;
+			background-size: 100% 100%;
+			}
+		.pphone{
+			color: #fff;
+			font-weight: bolder;
+			text-indent: 14%;
+		}
+		.phone{
+			border-radius: .6rem;
+			border: 0;
+  
+		}
+		.bphone{
+			font-size:16px;
+		}
+		.message{
+			width:80%;
+			margin:10px auto;
+			color: #fff;
+			clear:both;
+			height:90px;
+		}
+		.message b{width:80px; display:block;   float:left; height:90px;line-height:80px; text-align:left;}
+		.message span{  display:block; float:left; height:65px; line-height:45px;}
+		input{
+			border-radius: .6rem;
+			border: 0;
+			font-size:36px;
+			text-indent: .5rem;
+			height:35px;
+			resize:none
+		}
+		.day,.mouth{
+    		background: url('img/selectbg.png') no-repeat;
+    		background-size: 100% 100%;
+    		-webkit-appearance: none;
+    		-moz-appearance: none; 
+    		-o-appearance: none; 
+    		appearance: none;
+    		border: 0;
+    		text-indent: .3rem;
+    		font-weight: bolder;
+    	}
+    	.info{
+			color:#fff;
+			font-weight: bolder;
+		}
+		.food{
+			margin-top: -20%;
+		}
+		.commitdone{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: #000;
+			opacity: .89;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="chevvip">
+		<div class="commitdone" style="display: none;">
+			<img class="wewill" src="img/wewill.png" alt="">
+			<img class="towin" src="img/towin.png" alt="">
+		</div>
+		<img class="logo" src="img/indexlogo.png" alt="">
+		<img class="chevfood" src="img/chevfood.png" alt="">
+		<img class="attention" src="img/attention.png" alt="">
+		<p class="message">
+			<b>姓&nbsp;&nbsp;名</b>
+			<span><input maxlength="5" class="name" type="text">
+			</span>
+			<b>&nbsp;&nbsp; 手机</b>
+			<span>
+			<input class="phone" placeholder="" maxlength="11" type="text"></span>
+			
+		</p>
+		<p class="message">
+			<b>身份证号</b>
+			<span><input class="idcard" placeholder="" maxlength="18" type="text"></span>
+		</p>
+		<p class="message">
+			<b>地&nbsp;&nbsp;址</b>
+			<span><input class="address" placeholder="" maxlength="30" type="text"></span>
+		</p>
+		<p class="message" style="display:none">
+			<b>请选择游览时间</b>
+			<b>月</b>
+			<select class="mouth" name="" id="">
+				<option value=""></option>
+				<option value="">一月</option>
+			</select>
+			<b>日</b>
+			<select class="day" name="" id="">
+				<option value=""></option>
+				<option value="">1日</option>
+			</select>
+		</p>
+		<input class="commit" type="button" name="" value="">
+		<a class="info" href="">活动说明</a>
+	</div>
+<!-- 	<div class="commitdone">
+		<img class="done" src="img/done.png" alt="">
+		<img class="towin" src="img/towin2.png" alt="">
+	</div> -->
+</body>
+</html>

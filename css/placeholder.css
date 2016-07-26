@@ -1,0 +1,6 @@
+
+/*placeholder样式的设置*/
+::-webkit-input-placeholder { color:white;font-family:汉仪菱心体简; font-weight:bolder;}
+::-moz-placeholder { color:white;font-family:汉仪菱心体简;font-weight:bolder;} /* firefox 19+ */
+:-ms-input-placeholder { color:white;font-family:汉仪菱心体简;font-weight:bolder;} /* ie */
+input:-moz-placeholder { color:white;font-family:汉仪菱心体简;font-weight:bolder;}   

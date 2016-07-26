@@ -1,0 +1,37 @@
+﻿/*tags会脱离文档流，为避免content的内容挤上来，加入wrap_tags*/
+#wrap_tags{
+    position: relative;
+}
+#tags{
+    background:url(../images/title.png) no-repeat;background-size:100% 100%;
+    position: absolute;
+}
+
+
+.yh {  font-family:微软雅黑;
+}
+
+#tags li{
+    float: left;
+    text-align: center;
+    list-style-type: none;
+  
+}
+
+#tags .line {
+    width:2px;
+    float:left;
+}
+
+#tags li a:hover{
+    font-weight:bold;
+    color:#ff6a00;
+    font-family:微软雅黑;
+}
+ a:link,a:visited{
+    color: black;
+    font-family:微软雅黑;
+}
+ #tags li.selected{    
+     border-bottom:1px solid red;
+}

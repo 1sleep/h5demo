@@ -1,0 +1,36 @@
+﻿/*轮播图的CSS*/
+  .container {
+        position:relative;
+    }
+    ul{list-style:none;}
+    .container .container img{
+	    overflow:hidden;
+	    }   
+    .container .container_img ul li{
+	    position:relative;
+	    float:left;
+	    }
+    .container_num {
+        position:absolute;
+        left:33%;
+        bottom:3%;
+    }
+    .container ul.container_num li{
+	    float:left;
+	    margin:0 0 0 20px;
+	    width:5px;
+	    height:5px;
+        border-radius:5px;
+	    border:1px solid #bbb;
+	    background:gray;
+	    }
+    .container ul.container_num li.current{
+	    border:1px solid #fff;
+	    }
+    .container ul.container_num li.current a{
+	    color:#fff;
+	    }
+    .container ul.container_num li a{
+	    text-decoration:none;
+	    color:#bbb;
+	    }

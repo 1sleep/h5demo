@@ -1,0 +1,43 @@
+
+/*-----------------------手机号等验证弹框淡入淡出(无关闭按钮)-----------------------*/
+.pop{position:absolute;width:84%;top: 40%;left:8%;border-radius: 6px;background:rgba(0, 0, 0, 0.7);color:#fff;display:none;}
+.pop_p{text-align:center;padding: 15px 20px;font-size: 20px;color:#fff;}
+/*HTML
+    <div class="pop">
+        <p>请填写手机号！</p>
+    </div>
+*/  
+
+/*------------每一个微信号每天只能上传一次，第二次点击提交的时候弹框------------*/
+.defpop{position:fixed;background:rgba(0,0,0,0.8);width:100%;height:auto;display:none;z-index:999;}
+.once{margin-top:45%;}   
+/*HTML
+    <div class="defpop">
+        <img src="images/defpop.png" class="once"/>
+    </div>
+*/  
+
+/*---满足领取条件则弹框与助力红包被抢完提示---图片弹框,替换文字----------*/
+.hyzlpop{position:fixed;background:rgba(0,0,0,0.9);width:100%;height:auto;display:none;z-index:999;}
+.hy_pop{background:url(../images/hyzlpop.png) no-repeat;background-size:100% 100%;}   
+.hy_p{display:block;height:auto;width:100%;float:left;font-family:汉仪琥珀体简;font-weight:bolder;color:#fff;text-align:center;}
+.hy_back{background:none;border:none;}  
+
+/*------桃心没有点亮,继续邀请小伙伴--- 图片弹框,替换文字----------*/
+.hyzlpop1{position:fixed;background:rgba(0,0,0,0.9);width:100%;height:auto;display:none;z-index:999;}
+.hy_pop1{background:url(../images/hyzlpop1.png) no-repeat;background-size:100% 100%;}   
+.hy_invite1{background:none;border:none;float:left;} 
+.hy_back1{background:none;border:none;float:left;}  
+
+
+/*------------------------------分享页面弹框(箭头+黑色背景层)------------------------------*/
+.rowbox{position:fixed;background:rgba(0,0,0,0.8);width:100%;height:auto;display:none;z-index:999;}
+.row{float:right;}   
+
+
+
+
+
+
+
+

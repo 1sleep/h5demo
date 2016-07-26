@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="aplus-terminal" content="1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/layer.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/layer.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/upload.js"></script>
+    <script>
+    	$(function(){
+			 layer.open({
+                        type: 3,
+                        time: 2,
+                        area: ['240px','60px'],
+                        shadeClose: true,
+                        content: '\<\div style="padding: 20px; border-radius:20px;">测试版本，奖品及数据无效。\<\/div>'
+                    })
+    		var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    		var w = $(window).width();
+            var h = $(window).height();
+            $("body").css("minHeight", h + "px");
+            Part('.logo',640,81,0,20);
+            Part('.theme',640,238,0,0);
+            Part('.mess',640,95,0,20);
+            Part('.warn',640,17,0,10);
+            Part('.phone',330,57,0,0);
+            Part('.receipttip',314,53,34,0);
+            Part('.picture',181,169,368,35);
+            Part('.commit',191,75,365,80);
+            Part('.onlytwice',640,321,0,250);
+            Part('.towin',240,62,200,100);
+            Part('.tip',640,721,0,200);
+            Part('.tipbtn',212,78,0,0);
+            $('.commit').fadeIn();
+        	$('.commit').click(function(){
+    			if(!myreg.test($(".phone").val())) 
+				{ 
+				    layer.open({
+                        type: 1,
+                        time: 1,
+                        area: ['240px','60px'],
+                        shadeClose: true,
+                        content: '\<\div style="padding: 10px;">请输入正确手机号。\<\/div>'
+                    })
+				    return false;
+				}
+				window.location.href='baishilottery.html';
+				// 这一行在两次提示用户号码进行了2次抽奖
+    			// $('.commitdone').css('display','block');
+    		})
+    		$('.towin').click(function(){
+            	
+            })
+    		$("#up").uploadPreview({
+                Img: "imgpr",
+            });
+            $(".picture").click(function () {
+                $("#up").click();
+            });
+            
+    	})
+    </script>
+	<title></title>
+	<style>
+		body{
+			background: url('img/bg.jpg') no-repeat;
+			background-size: 100% 100%;
+		}
+		.pphone{
+			color: #fff;
+			font-weight: bolder;
+			text-indent: 14%;
+		}
+		.phone{
+			border-radius: .6rem;
+			border: 0;
+			text-indent: .5rem;
+			font-size: 1.3rem;
+		}
+		.bphone{
+			font-size: 16px;
+		}
+		.receipttip{
+			position: absolute;
+			margin-top: 2%;
+		}
+		.commitdone{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: #000;
+			opacity: .89;
+			display: none;
+			z-index: 3;
+		}
+		.tips{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: #000;
+			opacity: .89;
+			display: none;
+			z-index: 3;
+		}
+		.tipbtn{
+		    z-index: 4;
+		    position: absolute;
+		    margin-top: -12%;
+		    left: 33%;
+		    opacity: 0;
+		}
+	</style>
+</head>
+<body>
+<div class="commitdone">
+	<img class="onlytwice" src="img/onlytwice.png" alt="">
+	<img class="towin" src="img/towin2.png" alt="">
+</div>
+<div class="tips">
+	<img class="tip" src="img/tip.png" alt="">
+	<input class="tipbtn" type="text">
+</div>
+<img class="logo" src="img/indexlogo.png" alt="">
+<img class="theme" src="img/theme1.png" alt="">
+<img class="mess" src="img/mess.png" alt="">
+<p class="pphone">
+	<b class="bphone">手机号</b>
+	<input class="phone" placeholder="" maxlength="11" type="text">
+</p>
+<img class="warn" src="img/warn.png" alt="">
+<img class="receipttip" src="img/receipttip.png" alt="">
+<input type="file" id="up" style="display: none;">
+<img id="imgpr" class="picture" src="img/picture.png" alt="">
+<input class="commit" type="button" name="" value="">
+</body>
+</html>

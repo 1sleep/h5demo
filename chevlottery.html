@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="aplus-terminal" content="1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/layer.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/jquery.rotate.min.js"></script>
+    <script>
+    	$(function(){
+    		var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    		var w = $(window).width();
+            var h = $(window).height();
+            $("body").css("minHeight", h + "px");
+            Part('.logo',640,81,0,20);
+            Part('.theme',640,210,0,0);
+            Part('.ring',520,520,0,0);
+            Part('.clickwin',640,84,10,230);
+            Part('.go',140,140,0,190);
+            Part('.mess',640,95,0,20);
+            Part('.warn',640,17,0,10);
+            Part('.phone',330,57,0,0);
+            Part('.receipttip',314,53,34,0);
+            Part('.picture',181,169,368,35);
+            Part('.commit',191,75,365,80);
+            Part('.food',200,135,400,0);
+            $('.go').click(function(){
+    			goselect();
+    		})
+    		function goselect(){
+    			$('.ring').rotate({ angle:0,animateTo:3600,easing: $.easing.easeInOutExpo });
+    			setTimeout(function(){
+    				window.location.href="prize.html";
+    			},2000);
+    		}
+    	})
+    </script>
+	<title></title>
+	<style>
+        body{
+            background: url('img/bg3.jpg') no-repeat;
+            background-size: 100% 100%;
+        }
+		.lottery{
+			text-align: center;
+			margin-top: 30%;
+		}
+		.clickwin{
+			position: absolute;
+			left: 0;
+		}
+		.go{
+			position: absolute;
+			left: 40%;
+			opacity: 0;
+			z-index: 3;
+		}
+	</style>
+</head>
+<body>
+	<img class="logo" src="img/indexlogo.png" alt="">
+	<div class="lottery">
+		<img class="ring" src="img/ring.png" alt="">
+		<img class="clickwin" src="img/clickwin.png" alt="">
+		<input class="go" type="button" name="" value="">
+	</div>
+</body>
+</html>

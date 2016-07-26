@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="aplus-terminal" content="1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/layer.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/layer.js"></script>
+    <script src="js/calculate.js"></script>
+    <script>
+    	$(function(){
+    		var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    		var w = $(window).width();
+            var h = $(window).height();
+            $("body").css("minHeight", h + "px");
+            $(".rankbox").css("height", h + "px");
+            Part('.rankpop',587,529,30,240);
+            Part('.car1',155,130,26,36);
+            Part('.car2',155,130,217,36);
+            Part('.car3',155,130,407,36);
+            Part('.car4',155,130,26,198);
+            Part('.car5',155,130,217,198);
+            Part('.car6',155,130,407,198);
+            Part('.car7',155,130,26,360);
+            Part('.car8',155,130,217,360);
+			Part('.car9',155,130,407,360);
+
+            Part('.logo',640,81,0,20);
+            Part('.prize',640,419,0,150);
+            Part('.prize2',640,389,0,45);
+            Part('.name',120,57,0,20);
+            Part('.phone',200,57,0,20);
+            Part('.chname',480,57,130,0);
+            Part('.chphone',480,57,130,20);
+            Part('.selecttime',480,57,70,20);
+            Part('.wantcar',480,57,120,20);
+            Part('.car',310,57,0,20);
+            Part('.mephone',320,57,10,20);
+            Part('.mename',320,57,40,20);
+            Part('.mouth',260,57,0,20);
+            Part('.commit',191,75,0,40);
+            Part('.commit2',191,75,225,40);
+            Part('.info',83,20,450,180);
+            Part('.done',640,343,0,250);
+            Part('.towin',240,62,50,100);
+            Part('.tochev',240,62,50,0);
+            Part('.notwin',640,229,0,165);
+            Part('.wereceive',640,306,0,365)
+            $('.commit').click(function(){
+            	if($('.name').val() == ""){
+            		layer.open({
+            			type: 1,
+            			time: 1,
+            			area :['240px','60px'],
+            			shadeClose: true,
+                        content: '\<\div style="padding: 10px;">请输入姓名\<\/div>'
+            		})
+            		return false;
+            	}
+    			if(!myreg.test($(".phone").val())) 
+				{ 
+				    layer.open({
+                        type: 1,
+                        area: ['240px','60px'],
+                        time: 1,
+                        shadeClose: true,
+                        content: '\<\div style="padding: 10px;">请输入正确手机号\<\/div>'
+                    }) 
+				    return false;
+				} 
+				//$('.again').click(function(){
+    			$('.commitdone').css('display','block');
+    			})
+	    		$('.tochev').click(function(){
+	    			window.location.href="http://www.chevrolet.com.cn/"
+	    		})
+	    		$('.towin').click(function(){
+	    			window.location.href="upreceipt.html"
+	    		});
+	    		$('.car').click(function(){
+	    			Rankpop();
+	    		});
+
+    		});
+
+	    	function Rankpop(){
+				$(".rankbox").css("display", "block");
+				$(".rankpop input").click(function(){
+					$(".rankbox").css("display", "none");
+					$(".car").val($(this).attr("val"));
+				});
+	    	}
+    </script>
+	<title></title>
+	<style>
+		.rankbox{
+			position:fixed;
+			background:rgba(0,0,0,0.9);
+			width:100%;
+			height:auto;
+			display:none;
+			z-index:999;
+		}
+		.rankpop{
+			background:url(img/cars.png) no-repeat;
+			background-size:100% 100%;
+		}  
+		.rankpop input {
+			position:absolute;
+			background:none;
+			border:none;
+		}  
+		body{
+			background: url('img/yellowbg.jpg') no-repeat;
+			background-size: 100% 100%;
+		}
+		b{
+			color: #336;
+		}
+		input{
+			border-radius: .6rem;
+			border: 0;
+			text-indent: .5rem;
+			resize:none;
+		}
+		.message{
+			text-align: center;
+		}
+		.info,option{
+			color:#336;
+			font-weight: bolder;
+		}
+		.commitdone,.commitdone2{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: #000;
+			opacity: .89;
+			display: none;
+		}
+		.center{
+			text-align: center;
+		}
+		.mouth,.cars{
+			background: url('img/selectbg2.png') no-repeat;
+    		background-size: 100% 100%;
+    		-webkit-appearance: none;
+    		-moz-appearance: none; 
+    		-o-appearance: none; 
+    		appearance: none;
+    		border: 0;
+    		text-indent: .3rem;
+    		font-weight: bolder;
+		}
+	</style>
+</head>
+<body>
+	<div class="nowin">
+		<img class="logo" src="img/indexlogo.png" alt="">
+		<img class="notwin" src="img/notwin.png" alt="">
+		<img class="towin" src="img/towin.png" alt="">
+		<img class="tochev" src="img/tochev.png" alt="">
+		<a class="info" href="">活动说明</a>
+	</div>
+	
+</body>
+</html>

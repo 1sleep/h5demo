@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="aplus-terminal" content="1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/layer.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/jquery.rotate.min.js"></script>
+    <script>
+    	$(function(){
+    		var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    		var w = $(window).width();
+            var h = $(window).height();
+            $("body").css("minHeight", h + "px");
+           
+         
+    		 
+    	})
+    </script>
+	<title></title>
+	<style>
+		.lottery{
+			text-align: center;
+			margin-top: 0;
+		}
+		.clickwin{
+			position: absolute;
+			left: 0;
+		}
+		.go{
+			position: absolute;
+			left: 40%;
+			opacity: 0;
+			z-index: 3;
+		}
+		body{
+			background: url('img/info.jpg') no-repeat;
+			background-size: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+<div class="lottery">
+ </div>
+	</body>
+</html>
